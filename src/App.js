@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Header from './components/Header';
+
 import './App.css';
 
-import profile from './assets/teste.jpg';
-
 function App(){
-  return <img src={profile} />
+  return (
+    <Header />
+  )
 }
 
 export default App;
