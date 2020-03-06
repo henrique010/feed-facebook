@@ -1,11 +1,7 @@
-ul {
+.post-list-conatiner {
   display: flex;
   width: 50%;
-  align-items: center; 
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
-li {
-  display: flex;
-}

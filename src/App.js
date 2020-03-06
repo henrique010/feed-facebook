@@ -7,12 +7,10 @@ import './App.css';
 
 function App(){
   return (
-    <Fragment>
+    <div className="app-container">
       <Header />
-      <div className="container-post">
-        <PostList />
-      </div>
-    </Fragment>
+      <PostList />
+    </div>
   );
 }
 

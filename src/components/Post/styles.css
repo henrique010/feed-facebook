@@ -1,0 +1,60 @@
+.container-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  margin-top: 4%;
+  background-color: #FFF; 
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.133916);
+  border-radius: 5px;
+}
+
+  .container-post header {
+  width: 95%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  display: flex;
+  flex: 0.7;
+  align-self: center;  
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color:#FFF;
+  border-bottom: 1px solid #DDD;
+}
+
+.container-post footer {
+  width: 95%;
+  display: flex;
+  flex: 1;
+  align-self: center;
+  align-items: center;
+}
+
+.container-header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 0 2% 0 0;
+}
+
+.container-header div {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header-user-name {
+  font-weight: bold;
+}
+
+.header-date {
+  color: #777;
+}

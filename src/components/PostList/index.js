@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Post from '../Post';
+
 import './styles.css';
 
 class PostList extends Component {
@@ -38,9 +40,11 @@ class PostList extends Component {
 
   render(){
     return (
-      <ul>
-        {this.state.posts.map(post => <li key={post.id}>{post.author.avatar}</li>)}
-      </ul>
+      <div className="post-list-conatiner">
+        {this.state.posts.map(post => (
+          <Post />
+        ))}
+      </div>
     )
   }
 }
