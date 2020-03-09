@@ -1,8 +1,8 @@
 .container-post {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 250px;
+  min-width: 60%;
+  max-height: 100%;
   margin-top: 4%;
   background-color: #FFF; 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.133916);
@@ -23,12 +23,8 @@
   border-bottom: 1px solid #DDD;
 }
 
-.container-post footer {
-  width: 95%;
-  display: flex;
-  flex: 1;
-  align-self: center;
-  align-items: center;
+.post-description {
+  margin: 16px 0 4px 0;
 }
 
 .container-header {

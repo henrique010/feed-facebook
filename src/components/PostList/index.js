@@ -24,6 +24,22 @@ class PostList extends Component {
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             content: "Conteúdo do comentário"
+          },
+          {
+            id: 2,
+            author: {
+              name: "Diego Fernandes",
+              avatar: "http://url-da-imagem.com/imagem.jpg"
+            },
+            content: "Conteúdo do comentário"
+          },
+          {
+            id: 3,
+            author: {
+              name: "Diego Fernandes",
+              avatar: "http://url-da-imagem.com/imagem.jpg"
+            },
+            content: "Conteúdo do comentário"
           }
         ]
       },
@@ -42,7 +58,7 @@ class PostList extends Component {
     return (
       <div className="post-list-conatiner">
         {this.state.posts.map(post => (
-          <Post />
+          <Post key={post.id} post={post}/>
         ))}
       </div>
     )

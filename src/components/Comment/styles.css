@@ -1,0 +1,24 @@
+.comment-container {
+  width: 95%;
+  display: flex;
+  flex: 1;
+  align-self: center;
+  align-items: center;
+  margin: 8px;
+}
+
+.comment-container div {
+  flex: 0.07;
+  align-self: flex-start;
+}
+
+
+.comment-container label {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  background-color: #EEEEEE;
+  padding: 2%;
+  border-radius: 20px;
+}
+

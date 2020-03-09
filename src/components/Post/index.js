@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 
+import Comment from '../Comment';
+
 import profile from '../../assets/profile1.png';
-import profile2 from '../../assets/profile2.png';
 
 import './styles.css';
 
 class Post extends Component {
+
+  state = {
+    comments: [],
+  }
+
+  componentDidMount(){
+    const { comments } = this.props.post;
+
+    if(comments){
+      this.setState({ comments });
+    }
+  }
+
   render(){
     return (
       <div className="container-post">
@@ -17,11 +31,13 @@ class Post extends Component {
               <label className="header-date">04 Jun 2019</label>
             </div>
           </div>
-          <label>Pessoal, alguém sabe se a Rocketseat está contratando?</label>
+          <label className="post-description">
+            Pessoal, alguém sabe se a Rocketseat está contratando?
+          </label>
         </header>
-        {/* <footer>
-          <img src={profile2} className="profile-image" />
-        </footer> */}
+        {this.state.comments.map(comment => (
+          <Comment key={comment.id}/>
+        ))}
       </div>
     )
   }
