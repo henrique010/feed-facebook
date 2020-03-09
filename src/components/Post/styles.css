@@ -1,7 +1,7 @@
 .container-post {
   display: flex;
   flex-direction: column;
-  min-width: 60%;
+  min-width: 100%;
   max-height: 100%;
   margin-top: 4%;
   background-color: #FFF; 
@@ -10,7 +10,7 @@
 }
 
 .container-post header {
-  width: 95%;
+  max-width: 95%;
   padding-top: 2%;
   padding-bottom: 3%;
   display: flex;
