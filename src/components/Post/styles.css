@@ -9,7 +9,7 @@
   border-radius: 5px;
 }
 
-  .container-post header {
+.container-post header {
   width: 95%;
   padding-top: 2%;
   padding-bottom: 3%;
@@ -21,6 +21,15 @@
   align-items: flex-start;
   background-color:#FFF;
   border-bottom: 1px solid #DDD;
+}
+
+.container-post footer {
+  width: 95%;
+  display: flex;
+  flex: 1;
+  align-self: center;
+  flex-direction: column;
+  margin: 8px;
 }
 
 .post-description {

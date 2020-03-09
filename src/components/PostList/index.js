@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 
 import Post from '../Post';
 
+import profile from '../../assets/profile1.png';
+import profile2 from '../../assets/profile2.png';
+import profile3 from '../../assets/profile3.png';
+import profile4 from '../../assets/profile4.png';
+import profile5 from '../../assets/profile5.png';
+
 import './styles.css';
 
 class PostList extends Component {
@@ -12,7 +18,7 @@ class PostList extends Component {
         id: 1,
         author: {
           name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpg"
+          avatar: profile,
         },
         date: "04 Jun 2019",
         content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
@@ -21,35 +27,38 @@ class PostList extends Component {
             id: 1,
             author: {
               name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
+              avatar: profile2,
             },
-            content: "Conteúdo do comentário"
+            content: "A Rocketseat está sempre em busca de novos membros para o time, inclusive ficamos de olho principalmente nos nossos alunos que se destacam no Bootcamp, inclusive 80% do nosso time de devs é composto por alunos do Bootcamp."
           },
-          {
-            id: 2,
-            author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
-            },
-            content: "Conteúdo do comentário"
-          },
-          {
-            id: 3,
-            author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
-            },
-            content: "Conteúdo do comentário"
-          }
         ]
       },
       {
         id: 2,
         author: {
-          name: "Diego Fernandes",
-          avatar: "http://url-da-imagem.com/imagem.jpg"
+          name: "Gabriel Lisboa",
+          avatar: profile3,
         },
-        content: "Conteúdo do comentário"
+        date: "04 Jun 2019",
+        content: "Fala galera, beleza? \n Estou fazendo o bootacamp GoStack da Rocketseat e está sendo muito massa! Alguém mais ai fazendo, comenta na publicação para trocarmos uma idéia.",
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: "Clara Lisboa",
+              avatar: profile4,
+            },
+            content: "Também estou fazendo o bootcamp e estou adorando! Estou no terceiro módulo sobre Node e já tenho minha api dos desafios costruída."
+          },
+          {
+            id: 2,
+            author: {
+              name: "Cézar Toledo",
+              avatar: profile5,
+            },
+            content: "Que massa! Estou pensando em me inscrever na próxima turma pra ver qual é desse bootcamp GoStack, dizem que os devs saem de lá com super poderes."
+          },
+        ]
       }
     ]
   }
